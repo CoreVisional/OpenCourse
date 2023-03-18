@@ -1,0 +1,10 @@
+header {
+    nav {
+        background-color: $primary-color;
+    }
+}
+
+nav .nav-link.current-active-link {
+    color: $white;
+    font-weight: bold;
+}

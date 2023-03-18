@@ -1,0 +1,35 @@
+.breadcrumb-row {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+
+    ul {
+        margin: 0;
+
+        li {
+            padding: 0;
+            margin-right: 3px;
+            color: #000;
+            display: inline-block;
+        }
+
+        li:after {
+            content: "\f105";
+            margin-left: 7px;
+            font-family: fontawesome, sans-serif;
+        }
+
+        li:last-child {
+            color: #000;
+        }
+
+        li:last-child:after {
+            display: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}

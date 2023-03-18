@@ -1,0 +1,85 @@
+.contact-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .business-info,
+    .business-email-form {
+        border-top: 3px solid rgb(58, 16, 120);
+        border-bottom: 3px solid rgb(58, 16, 120);
+        padding: 30px;
+        background: #fff;
+        width: 100%;
+        box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+    }
+
+    .business-info {
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            border-radius: 100px;
+            background: #eaf6ed;
+            width: 35px;
+            height: 35px;
+            color: #475ac7;
+        }
+
+        h4 {
+            padding: 0 0 0 60px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #222222;
+            line-height: 1.2;
+        }
+
+        p {
+            padding: 0 0 10px 60px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #555555;
+        }
+
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 290px;
+        }
+    }
+
+    .business-email-form {
+        .form-group {
+            padding-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        input {
+            height: 44px;
+        }
+
+        .mt-3 {
+            margin-top: 1rem !important;
+        }
+
+        textarea {
+            padding: 10px 12px;
+            height: 260px;
+            margin-bottom: 28px;
+        }
+
+        button[type="submit"] {
+            background: #475ac7;
+            border: 0;
+            padding: 10px 24px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 5px;
+        }
+    }
+}

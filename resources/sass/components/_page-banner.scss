@@ -1,0 +1,51 @@
+.page-content {
+
+    .page-banner {
+        height: 300px;
+        background-size: cover;
+        background-position: center center;
+        display: table;
+        width: 100%;
+        text-align: left;
+
+        .container {
+            display: table;
+            height: 100%;
+        }
+
+        .page-banner-entry {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+
+            &.align-m {
+                vertical-align: middle;
+            }
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+    }
+
+    .ovbl-dark:after {
+        background: linear-gradient(45deg, #100018 0%,#26006c 50%,#110038 100%);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .page-banner-entry {
+        vertical-align: middle;
+    }
+    .page-banner {
+        padding-bottom: 0;
+        height: 200px;
+    }
+    .page-banner h1 {
+        line-height: 24px;
+        font-size: 20px;
+        text-align: center;
+    }
+}

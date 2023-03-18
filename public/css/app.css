@@ -1,0 +1,191 @@
+header nav {
+  background-color: #37517E;
+}
+
+nav .nav-link.current-active-link {
+  color: #F9F9F9;
+  font-weight: bold;
+}
+
+footer .team-name {
+  color: #e14d2a;
+}
+
+.primary-bg-color {
+  background-color: #F9F9F9;
+}
+
+.title {
+  color: #37517E;
+}
+
+.logo-color {
+  color: #BFDBF0;
+}
+
+.contact-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.contact-section .business-info,
+.contact-section .business-email-form {
+  border-top: 3px solid rgb(58, 16, 120);
+  border-bottom: 3px solid rgb(58, 16, 120);
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.contact-section .business-info i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  border-radius: 100px;
+  background: #eaf6ed;
+  width: 35px;
+  height: 35px;
+  color: #475ac7;
+}
+.contact-section .business-info h4 {
+  padding: 0 0 0 60px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222222;
+  line-height: 1.2;
+}
+.contact-section .business-info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555555;
+}
+.contact-section .business-info iframe {
+  border: 0;
+  width: 100%;
+  height: 290px;
+}
+.contact-section .business-email-form .form-group {
+  padding-bottom: 8px;
+}
+.contact-section .business-email-form input,
+.contact-section .business-email-form textarea {
+  font-size: 14px;
+  border-radius: 5px;
+}
+.contact-section .business-email-form input {
+  height: 44px;
+}
+.contact-section .business-email-form .mt-3 {
+  margin-top: 1rem !important;
+}
+.contact-section .business-email-form textarea {
+  padding: 10px 12px;
+  height: 260px;
+  margin-bottom: 28px;
+}
+.contact-section .business-email-form button[type=submit] {
+  background: #475ac7;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.form-control-custom {
+  font-size: 1rem;
+}
+
+.page-content .page-banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  display: table;
+  width: 100%;
+  text-align: left;
+}
+.page-content .page-banner .container {
+  display: table;
+  height: 100%;
+}
+.page-content .page-banner .page-banner-entry {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.page-content .page-banner .page-banner-entry.align-m {
+  vertical-align: middle;
+}
+.page-content .page-banner h1 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.page-content .ovbl-dark:after {
+  background: linear-gradient(45deg, #100018 0%, #26006c 50%, #110038 100%);
+}
+
+@media only screen and (max-width: 767px) {
+  .page-banner-entry {
+    vertical-align: middle;
+  }
+  .page-banner {
+    padding-bottom: 0;
+    height: 200px;
+  }
+  .page-banner h1 {
+    line-height: 24px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.breadcrumb-row {
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.breadcrumb-row ul {
+  margin: 0;
+}
+.breadcrumb-row ul li {
+  padding: 0;
+  margin-right: 3px;
+  color: #000;
+  display: inline-block;
+}
+.breadcrumb-row ul li:after {
+  content: "\f105";
+  margin-left: 7px;
+  font-family: fontawesome, sans-serif;
+}
+.breadcrumb-row ul li:last-child {
+  color: #000;
+}
+.breadcrumb-row ul li:last-child:after {
+  display: none;
+}
+.breadcrumb-row a {
+  text-decoration: none;
+  color: #000;
+}
+
+.ovbl-dark {
+  position: relative;
+}
+.ovbl-dark:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+}
+.ovbl-dark .container,
+.ovbl-dark .container-fluid {
+  position: relative;
+  z-index: 1;
+}
