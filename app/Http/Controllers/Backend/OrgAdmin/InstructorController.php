@@ -48,14 +48,14 @@ class InstructorController extends Controller
             })
             ->first();
 
-        // Generate hashed id for the invitation
-        $hashedId = hash('sha256', $user->user_id);
-
         if (!$user) {
             return redirect()->back()->with([
                 'notice' => 'User with this email is not found.',
                 'noticeBg' => 'alert-danger'
             ]);
+        } else {
+            // Generate hashed id for the invitation
+            $hashedId = hash('sha256', $user->user_id);
         }
 
         // Check if the user has already been invited to join as an instructor
