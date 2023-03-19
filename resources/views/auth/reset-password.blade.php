@@ -19,9 +19,9 @@
                         <input type="email"
                                class="form-control form-control-lg form-control-custom @error('email') is-invalid @enderror"
                                id="email" name="email"
-                               value="{{ $request->email }}" required/>
+                               value="{{ $request->email }}" readonly required/>
                         @error('email')
-                        <span class="invalid-feedback" role="alert">
+                            <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
