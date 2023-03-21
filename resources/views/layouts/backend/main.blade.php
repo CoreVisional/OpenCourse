@@ -40,6 +40,8 @@
         <script src="{{ asset('sneat-admin/js/menu.js') }}"></script>
         <script src="{{ asset('sneat-admin/js/main.js') }}"></script>
         <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
         {{-- Vendor JS --}}
         <script src="{{ asset('sneat-admin/libs/apex-charts/apex-charts.js') }}"></script>
