@@ -22,8 +22,12 @@ use App\Http\Controllers\Backend\OrgAdmin\InstructorController;
 |
 */
 
-// Homepage
+// Guest accessible routes
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/courses', [CourseController::class, 'index'])->name('public.courses.index');
+Route::get('/about-us', function () {
+    return view('pages.about-us');
+})->name('about-us');
 
 // Contact us route
 Route::get('/support/contact', [ContactController::class, 'show'])->name('contact.show');
