@@ -24,7 +24,7 @@
         </div>
         {{-- Breadcrumb row END --}}
 
-        {{-- Inner page banner --}}
+        {{-- Contact us page content --}}
         <div class="page-banner contact-section">
             <div class="container">
                 @include('partials._notice')
@@ -83,6 +83,7 @@
                 </div>
             </div>
         </div>
+        {{-- End of Contact us page content --}}
     </div>
 
 @endsection
