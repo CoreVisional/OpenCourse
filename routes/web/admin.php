@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Backend\Admin\AdminHomeController;
 use App\Http\Controllers\Backend\Admin\InstitutionsController;
-use App\Http\Controllers\Backend\Admin\ReportsController;
+use App\Http\Controllers\Backend\Admin\ReportController;
 use App\Http\Controllers\Backend\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
