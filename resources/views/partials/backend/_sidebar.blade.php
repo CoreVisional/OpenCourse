@@ -64,18 +64,25 @@
                 </a>
             </li>
             {{-- Courses --}}
-            <li class="menu-item mt-3 {{ Route::is('courses.*') ? 'active' : '' }}">
-                <a href="{{ route('courses.index') }}" class="menu-link">
+            <li class="menu-item mt-3 {{ Route::is('org_admin.courses.*') ? 'active' : '' }}">
+                <a href="{{ route('org_admin.courses.index') }}" class="menu-link">
                     <i class="menu-icon fa-solid fa-book"></i>
                     <div>{{ __('Courses') }}</div>
                 </a>
             </li>
         @elseif($role->role_name === 'instructor')
+            {{-- Instructor Dashboard Home --}}
+            <li class="menu-item {{ Route::is('dashboard.instructor.index') ? 'active' : '' }}">
+                <a href="{{ route('dashboard.instructor.index') }}" class="menu-link">
+                    <i class=" menu-icon fa-solid fa-house"></i>
+                    <div data-i18n="Analytics">Home</div>
+                </a>
+            </li>
             {{-- Courses --}}
-            <li class="menu-item mt-3">
-                <a href="" class="menu-link">
+            <li class="menu-item mt-3 {{ Route::is('instructor.courses.*') ? 'active' : '' }}">
+                <a href="{{ route('instructor.courses.index') }}" class="menu-link">
                     <i class="menu-icon fa-solid fa-book"></i>
-                    <div>{{ __('Courses') }}</div>
+                    <div>{{ __('Assigned Courses') }}</div>
                 </a>
             </li>
         @endif
