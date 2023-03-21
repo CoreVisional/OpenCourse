@@ -30,5 +30,5 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::resource('/institutions', InstitutionsController::class);
 
     // Report generation routes
-    Route::resource('/reports', ReportsController::class);
+    Route::resource('/reports', ReportController::class);
 });
