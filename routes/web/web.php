@@ -52,9 +52,14 @@ Route::post('/forgot-password', [PasswordResetLinkController::class, 'store'])
 
 // Organization Admin Routes
 Route::middleware('auth')->group(function () {
-    Route::get('/org_admin', [DashboardController::class, 'index'])->name('dashboard.org_admin.index');
-    // Courses Routes
-    Route::resource('/org_admin/courses', CourseController::class);
+    Route::get('/instructor', [InstructorHomeController::class, 'index'])->name('dashboard.instructor.index');
+    Route::get('/org_admin', [OrgAdminHomeController::class, 'index'])->name('dashboard.org_admin.index');
+
+    // Instructor Routes
+    Route::resource('/instructor/courses', InstructorCourseController::class)->names([
+        'index' => 'instructor.courses.index',
+    ]);
+    // End of Instructor Routes
 
     // Org_Admin Routes
     Route::get('/org_admin/instructors/finduser', function () {
