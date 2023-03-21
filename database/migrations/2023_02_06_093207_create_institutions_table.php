@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('institutions', function (Blueprint $table) {
             $table->bigIncrements('institution_id');
             $table->string('institution_name', 255);
-            $table->string('institution_abbreviation', 3);
+            $table->string('institution_abbreviation', 3)->nullable();
             $table->string('institution_website', 255)->nullable();
             $table->string('institution_email', 255);
             $table->string('dial_code', 3);
