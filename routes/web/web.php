@@ -70,4 +70,8 @@ Route::middleware('auth')->group(function () {
         return view('backend.org_admin.instructors.inviteuser');
     })->name('instructors.inviteUser');
     Route::resource('/org_admin/instructors', InstructorController::class);
+    Route::resource('/org_admin/courses', OrgAdminCourseController::class)->names([
+        'index' => 'org_admin.courses.index',
+    ]);
+    // End of Org_Admin Routes
 });
