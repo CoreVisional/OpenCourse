@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Backend\Admin\DashboardController;
+use App\Http\Controllers\Backend\Admin\AdminHomeController;
 use App\Http\Controllers\Backend\Admin\InstitutionsController;
 use App\Http\Controllers\Backend\Admin\ReportsController;
 use App\Http\Controllers\Backend\Admin\UserController;
@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware(['auth', 'admin'])->group(function () {
-    Route::get('/', [DashboardController::class, 'index'])->name('dashboard.admin.index');
+    Route::get('/', [AdminHomeController::class, 'index'])->name('dashboard.admin.index');
 
     // User routes
     Route::put('/users/{id}/enable', [UserController::class, 'enable'])->name('users.enable');
