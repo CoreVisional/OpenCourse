@@ -42,7 +42,7 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <a href=""
+                                        <a href="{{ route('instructors.show', $instructor->instructor_id) }}"
                                            class="btn btn-sm btn-info me-1">
                                             <i class="fa-solid fa-circle-info me-2"></i>Details
                                         </a>
