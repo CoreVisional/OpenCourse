@@ -55,6 +55,11 @@
                 $('form').on('submit', function () {
                     $('.submit-button').prop('disabled', true);
                 });
+                $('.multi-select').selectpicker({
+                    style: 'btn-default, btn-outline-dark',
+                    size: false,
+                    noneSelectedText: "Select instructor...",
+                });
             });
         </script>
     </body>
