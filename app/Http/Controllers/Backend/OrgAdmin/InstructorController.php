@@ -122,10 +122,15 @@ class InstructorController extends Controller
 
     /**
      * Display the specified resource.
+     *
+     * @param int $id
+     * @return Application|Factory|View
      */
-    public function show(string $id)
+    public function show(int $id): View|Application|Factory
     {
-        //
+        $instructor = Instructor::with(['user', 'institution'])->find($id);
+
+        return view('backend.org_admin.instructors.details', compact('instructor'));
     }
 
     /**
