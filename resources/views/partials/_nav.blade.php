@@ -10,16 +10,20 @@
             <div class="d-flex">
                 <div class="navbar-nav mx-5 flex-shrink-0">
                     <div class="nav-item px-4 py-2">
-                        <a href="{{ route('home') }}" class="nav-link {{ Route::is('home') ? 'current-active-link' : '' }}">Home</a>
+                        <a href="{{ route('home') }}"
+                           class="nav-link {{ Route::is('home') ? 'current-active-link' : '' }}">Home</a>
                     </div>
                     <div class="nav-item px-4 py-2">
-                        <a href="#" class="nav-link">Courses</a>
+                        <a href="{{ route('public.courses.index') }}"
+                           class="nav-link {{ Route::is('public.courses.index') ? 'current-active-link' : '' }}">Courses</a>
                     </div>
                     <div class="nav-item px-4 py-2">
-                        <a href="#" class="nav-link">About Us</a>
+                        <a href="{{ route('about-us') }}"
+                           class="nav-link {{ Route::is('about-us') ? 'current-active-link' : '' }}">About Us</a>
                     </div>
                     <div class="nav-item px-4 py-2">
-                        <a href="{{ route('contact.show') }}" class="nav-link {{ Route::is('contact.show') ? 'current-active-link' : '' }}">Contact Us</a>
+                        <a href="{{ route('contact.show') }}"
+                           class="nav-link {{ Route::is('contact.show') ? 'current-active-link' : '' }}">Contact Us</a>
                     </div>
                 </div>
 
@@ -73,7 +77,8 @@
                                             <i class="fa-solid fa-arrow-right-from-bracket me-2"></i>
                                             <span>{{ __('Logout') }}</span>
                                         </a>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                              class="d-none">
                                             @csrf
                                         </form>
                                     </div>
@@ -93,11 +98,11 @@
                                     <div class="dropdown-item">
                                         <a href="{{ route('login') }}" class="dropdown-item">Login</a>
                                     </div>
-                                @if (Route::has('register'))
-                                    <div class="dropdown-item">
-                                        <a href="{{ route('register') }}" class="dropdown-item">Sign Up</a>
-                                    </div>
-                                @endif
+                                    @if (Route::has('register'))
+                                        <div class="dropdown-item">
+                                            <a href="{{ route('register') }}" class="dropdown-item">Sign Up</a>
+                                        </div>
+                                    @endif
                                 </div>
                             </div>
                         @endauth
