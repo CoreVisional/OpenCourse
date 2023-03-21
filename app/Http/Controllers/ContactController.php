@@ -29,14 +29,14 @@ class ContactController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
-        $data = $this->validate($request, [
-            'name' => 'required',
+        $this->validate($request, [
+            'name' => 'required|string',
             'email' => 'required|email',
-            'subject' => 'required',
-            'message' => 'required',
+            'subject' => 'required|string',
+            'message' => 'required|string',
         ]);
 
-        Mail::send('emails.contact', $data, function ($message) use ($request) {
+        Mail::send('emails.contact', ['emailContent' => $request->get('message')], function ($message) use ($request) {
             $message->from($request->email, $request->name);
             $message->to('support@opencourse.net')->subject($request->subject);
         });
