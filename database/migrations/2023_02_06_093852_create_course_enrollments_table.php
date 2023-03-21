@@ -30,7 +30,7 @@ return new class extends Migration
             $table->date('enrollment_date');
             $table->decimal('final_grade', 3, 2)->nullable();
             $table->string('certificate_ID', 12)->nullable();
-            $table->string('certificate_path', 25)->nullable();
+            $table->string('certificate_path', 255)->nullable();
             $table->timestamps();
         });
     }
