@@ -1,0 +1,46 @@
+.page-banner {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+}
+
+.course-section {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .course-card {
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        overflow: hidden;
+        width: 80%;
+        margin: 1rem 0;
+
+        .course-image {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .course-details {
+            padding: 1rem;
+
+            .course-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            .course-description {
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #777;
+            }
+        }
+    }
+}
