@@ -22,8 +22,8 @@ return new class extends Migration
             $table->string('course_name', 255);
             $table->text('course_description');
             $table->string('course_image', 255);
-            $table->string('course_commitment', 12);
-            $table->decimal('minimum_grade', 3, 2);
+            $table->string('course_commitment', 255);
+            $table->decimal('minimum_grade', 4, 2);
             $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
