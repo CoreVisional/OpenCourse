@@ -4,11 +4,16 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\ContactController;
 
+// Instructor Controllers
+use App\Http\Controllers\Backend\Instructor\InstructorHomeController;
+use App\Http\Controllers\Backend\Instructor\CourseController as InstructorCourseController;
+
 // Organization Admin Controllers
-use App\Http\Controllers\Backend\OrgAdmin\DashboardController;
-use App\Http\Controllers\Backend\OrgAdmin\CourseController;
+use App\Http\Controllers\Backend\OrgAdmin\OrgAdminHomeController;
+use App\Http\Controllers\Backend\OrgAdmin\CourseController as OrgAdminCourseController;
 use App\Http\Controllers\Backend\OrgAdmin\InstructorController;
 
 /*
