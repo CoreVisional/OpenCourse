@@ -33,3 +33,6 @@
 <link rel="stylesheet" href="{{ asset('sneat-admin/libs/apex-charts/apex-charts.css') }}"/>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css"/>
 <script src="{{ asset('sneat-admin/js/helpers.js') }}"></script>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"/>
