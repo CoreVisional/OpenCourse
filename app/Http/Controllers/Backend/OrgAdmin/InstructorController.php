@@ -21,11 +21,19 @@ class InstructorController extends Controller
      */
     public function index(): View|Application|Factory
     {
+        $user = auth()->user(); // Get the authenticated user
+
+        // Get the institutions the organization admin belongs to
+        $institutionIds = $user->institutions->pluck('institution_id');
+
+        // Get instructors belonging to the same institutions
         $instructors = DB::table('instructors')
             ->join('users', 'users.user_id', '=', 'instructors.user_id')
-            ->select('instructors.instructor_name', 'instructors.instructor_title', 'instructors.instructor_department', 'users.is_disabled', 'users.email')
+            ->whereIn('instructors.institution_id', $institutionIds)
+            ->select('instructors.instructor_id', 'instructors.instructor_name', 'instructors.instructor_title', 'instructors.instructor_department', 'users.is_disabled', 'users.email')
             ->get();
 
+        // Return the view with the instructors
         return view('backend.org_admin.instructors.index', compact('instructors'));
     }
 
