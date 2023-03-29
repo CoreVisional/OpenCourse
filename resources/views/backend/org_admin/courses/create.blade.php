@@ -7,7 +7,7 @@
     <div class="container-xxl flex-grow-1 container-p-y">
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h4 class="fw-bold mb-3 mt-3" style="margin-bottom: 0;">
-                <a href="{{ route('courses.index') }}">
+                <a href="{{ route('org_admin.courses.index') }}">
                     <span class="text-muted fw-light">Courses / </span>
                 </a>
                 Create Course
