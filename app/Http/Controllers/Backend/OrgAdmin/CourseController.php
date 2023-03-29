@@ -80,7 +80,7 @@ class CourseController extends Controller
         $validatedData = $request->validate([
             'course_name' => 'required|string|max:255',
             'course_description' => 'required|string',
-            'course_image' => 'nullable|image|mimes:jpeg,png|max:2048',
+            'course_image' => 'nullable|image|mimes:jpeg,jpg,png|max:4096',
             'course_commitment' => 'required|string|max:255',
             'minimum_grade' => 'required|numeric|between:0,99.99',
             'instructor_id' => 'required|array',
