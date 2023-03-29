@@ -108,7 +108,7 @@ class CourseController extends Controller
             $courseThumbnailPath = $courseThumbnail->storeAs('institutions/' . $uuid . '/courses/thumbnail', $uniqueThumbnailName, 'public');
         } else {
             // Set the default path for the thumbnail image
-            $courseThumbnailPath = 'img/course-thumbnail-default.jpg';
+            $courseThumbnailPath = 'img/default/default-course.jpg';
         }
 
         // Save to the database
@@ -130,7 +130,7 @@ class CourseController extends Controller
             'end_date' => $validatedData['end_date'],
         ]);
 
-        return redirect()->route('courses.index')->with([
+        return redirect()->route('org_admin.courses.index')->with([
             'message' => 'Course created successfully',
             'alert-type' => 'success'
         ]);
