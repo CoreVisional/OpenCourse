@@ -61,7 +61,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/org_admin', [OrgAdminHomeController::class, 'index'])->name('dashboard.org_admin.index');
 
     // Instructor Routes
-    Route::get('/instructor/courses', [InstructorCourseController::class, 'index'])->name('instructor.courses.index');
+    Route::resource('/instructor/courses', InstructorCourseController::class)->names([
+        'index' => 'instructor.courses.index',
+    ]);
     // End of Instructor Routes
 
     // Org_Admin Routes
