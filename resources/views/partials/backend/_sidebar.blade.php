@@ -64,7 +64,7 @@
                 </a>
             </li>
             {{-- Courses --}}
-            <li class="menu-item mt-3 {{ Route::is('org_admin.courses.*') ? 'active' : '' }}">
+            <li class="menu-item mt-3 {{ Route::is(['org_admin.courses.*', 'courses.*']) ? 'active' : '' }}">
                 <a href="{{ route('org_admin.courses.index') }}" class="menu-link">
                     <i class="menu-icon fa-solid fa-book"></i>
                     <div>{{ __('Courses') }}</div>
